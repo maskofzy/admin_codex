@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "id": "cars",
+      "name": "个人赛车乱斗",
+      "platform": "dy",
+      "database": "normal_codex_next",
+      "redisDb": 1,
+      "envPrefix": "CARS",
+      "configKey": "version1",
+      "capabilities": [
+        "leaderboards",
+        "compensations",
+        "guilds",
+        "debug",
+        "operations"
+      ],
+      "giftCatalog": [
+        { "id": "nitro", "name": "仙女棒", "value": 1 },
+        { "id": "repair", "name": "能力药丸", "value": 10 },
+        { "id": "mirror", "name": "魔法镜", "value": 19 },
+        { "id": "invulnerability", "name": "甜甜圈", "value": 52 },
+        { "id": "overclock", "name": "能量电池", "value": 99 },
+        { "id": "love-explosion", "name": "爱的爆炸", "value": 199 }
+      ]
+    },
+    {
+      "id": "tower-dy",
+      "name": "塔防（抖音）",
+      "platform": "dy",
+      "database": "tower_dy_codex",
+      "redisDb": 2,
+      "envPrefix": "TOWER_DY",
+      "configKey": "tower-main",
+      "capabilities": [
+        "tower_config"
+      ],
+      "giftCatalog": [],
+      "tower": {
+        "mainConfigId": 1,
+        "anchorConfigIds": [1]
+      }
+    },
+    {
+      "id": "tower-ks",
+      "name": "塔防（快手）",
+      "platform": "ks",
+      "database": "tower_ks_codex",
+      "redisDb": 3,
+      "envPrefix": "TOWER_KS",
+      "configKey": "tower-main",
+      "capabilities": [
+        "tower_config"
+      ],
+      "giftCatalog": [],
+      "tower": {
+        "mainConfigId": 1,
+        "anchorConfigIds": [1]
+      }
+    }
+  ]
+}

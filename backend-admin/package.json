@@ -1,0 +1,31 @@
+{
+  "name": "danmaku-admin-backend",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "node --env-file-if-exists=.env --watch src/server.js",
+    "db:schema": "node --env-file-if-exists=.env scripts/apply-schema.js",
+    "db:seed:tower-local": "node --env-file-if-exists=.env scripts/seed-local-tower-projects.js",
+    "test": "node --test test/*.test.js",
+    "test:integration": "node --env-file-if-exists=.env --test test/integration/*.test.js",
+    "lint": "eslint .",
+    "check": "npm run lint && npm test"
+  },
+  "dependencies": {
+    "@fastify/cors": "11.3.0",
+    "fastify": "5.11.2",
+    "ioredis": "6.0.0",
+    "lossless-json": "4.3.1",
+    "mysql2": "3.23.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.8.0",
+    "globals": "17.9.0"
+  }
+}

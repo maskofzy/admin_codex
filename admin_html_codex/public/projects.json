@@ -1,0 +1,20 @@
+{
+  "apiBase": "http://127.0.0.1:8121",
+  "projects": [
+    {
+      "id": "cars",
+      "name": "个人赛车乱斗",
+      "authRequired": false
+    },
+    {
+      "id": "tower-dy",
+      "name": "塔防（抖音）",
+      "authRequired": false
+    },
+    {
+      "id": "tower-ks",
+      "name": "塔防（快手）",
+      "authRequired": false
+    }
+  ]
+}
