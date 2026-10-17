@@ -5,7 +5,7 @@
 ## 工作区与 Git
 
 - 唯一管理源码工作区：`D:\xd\admin_codex`；前端 `admin_html_codex/`，独立 API `backend-admin/`。
-- origin：`https://github.com/maskofzy/admin_codex.git`。2026-10-17 已替换旧 `adminManagement.git`；新远端 `git ls-remote` 成功且无 refs，尚未推送。
+- origin：`https://github.com/maskofzy/admin_codex.git`。2026-10-17 已替换旧 `adminManagement.git`；已按用户要求推送 main，初始基线及文档整理提交 `d3ad83b` 已上传，main 跟踪 origin/main。
 - 本地已有基线 `e0abc99`（`chore: establish admin management baseline`）；截至本次整理，后续功能仍有大量未提交修改和新增文件。建了远端不等于这些内容已进 Git，不能据此删除源码副本或回滚材料。
 - cars 下的 `.codex-admin-split` 不再作为管理源码来源；不要按旧迁移步骤重新覆盖本工作区。
 - 开始任务先完整读本文，再运行 `git status --short`、`git log -5 --oneline`。已有修改属于原任务，不能重置或混入无关提交。未经明确要求不推送远端。
@@ -70,7 +70,7 @@ Vue 3 管理台 → 已配置的独立 Fastify 管理 API → 每项目固定 My
 
 ## 尚未完成与后续优先项
 
-1. Git：审查、验证并建立后续功能提交，再按用户明确指令推送；当前远端空仓不是可恢复备份。旧源码/部署快照清理还需发布清单与恢复能力核对，不能仅凭仓库存在删除。
+1. Git：审查、验证并建立后续功能提交，再按用户明确指令推送；远端已含初始基线和整理文档，但尚未包含工作区后续功能，不能作为当前完整源码备份。旧源码/部署快照清理还需发布清单与恢复能力核对，不能仅凭仓库存在删除。
 2. 真实浏览器验收：近期工具反复超时，未完成最终桌面/390px/console、补偿场次点击、流水及 pending 调试切换验收；API/组件/静态 SHA 不替代浏览器验证。
 3. 部署基线：三个运行 API 历史上定点合入不同功能；下一次发布先核对实际源码/清单，再决定差异，不直接整包覆盖。长期需建立可重复的版本化发布与恢复流程。
 4. 通用适配器整体移除尚未完成，应单独评估并实施，文档整理不等于代码已删除。
